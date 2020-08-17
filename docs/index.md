@@ -21,17 +21,19 @@
 
 ## Table of Contents
 1. [Link to data](#Link-to-data)
-2. [Code](#Code)
-3. [Examples](#Examples)
+2. [Requirements](#Requirements)
+3. [Example Script](#Examples)
 4. [Reference](#Reference)
 
 
-### Link to data:
+## Link to data:
 Data can be downloaded here : LINK HERE\
 We've also included a csv file, in which you can see the video source and the specific section we took the intervals from.
 
 
-### Code
+## Requirements:
+
+## Example
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 

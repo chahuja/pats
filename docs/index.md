@@ -16,13 +16,10 @@ The dataset is used in:
 ## Table of Contents
 1. Link to data
 2. CSV file with specific intervals and source
-3. Examples
+3. Code
+4. Examples
+5. Reference
 
-test
-
-You can use the [editor on GitHub](https://github.com/chahuja/PATS/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
@@ -59,14 +56,3 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### Reference
 If you found this code useful, please cite the following paper:
-
-```
-@InProceedings{ginosar2019gestures,
-  author={S. Ginosar and A. Bar and G. Kohavi and C. Chan and A. Owens and J. Malik},
-  title = {Learning Individual Styles of Conversational Gesture},
-  booktitle = {Computer Vision and Pattern Recognition (CVPR)}
-  publisher = {IEEE},
-  year={2019},
-  month=jun
-}
-```

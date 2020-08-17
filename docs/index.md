@@ -11,7 +11,7 @@
 * 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists.
 * Includes various representations of features/
 
-<img src="https://https://user-images.githubusercontent.com/43928520/90454907-88b40d80-e0c2-11ea-82c3-d7383906d967.png" width="1000" height="1000">
+<img src="https://user-images.githubusercontent.com/43928520/90454983-c022ba00-e0c2-11ea-991e-36bd5cb3b38b.png" width="800" height="800">
 
 ## Dataset Features
 | Features | Available Representations | Description |

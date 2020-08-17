@@ -14,10 +14,10 @@ The dataset is used in:
 [Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach](https://arxiv.org/abs/2007.12553) *
 
 ## Table of Contents
-1. Link to data
-2. Code
-3. Examples
-4. Reference
+1. [Link to data](#Link-to-data)
+2. [Code](#Code)
+3. [Examples](#Examples)
+4. [Reference](#Reference)
 
 
 ### Link to data:
@@ -47,6 +47,8 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+
+### Examples
 
 ### Reference
 If you found this code useful, please cite the following paper:

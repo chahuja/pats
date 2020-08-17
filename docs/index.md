@@ -1,3 +1,8 @@
+# PATS (Pose, Audio, Transcript, Style) Dataset
+
+As used in:
+[Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach](https://arxiv.org/abs/2007.12553) *
+
 ## Table of Contents
 
 test

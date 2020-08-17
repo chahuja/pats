@@ -35,12 +35,34 @@ We've also included a csv file, in which you can see the video source and the sp
 
 ## Example
 
+Arguments:
+- path2data (str): path to dataset.
+- speaker (str): speaker name.
+- modalities (list of str): list of modalities to wrap in the dataloader. These modalities are keys of the hdf5 files which were preprocessed earlier (default: ``['pose/data', 'audio/log_mel']``)
+- fs_new (list, optional): new frequency of modalities, to which the data is up/downsampled to. (default: ``[15, 15]``).
+- time (float, optional): time snippet length in seconds. (default: ``4.3``).
+- split (tuple or None, optional): split fraction of train and dev sets. Must add up to less than 1. If ``None``, use ``dataset`` columns in the master dataframe (loaded in self.df) to decide train, dev and test split. (default: ``None``).
+- batch_size (int, optional): batch size of the dataloader. (default: ``100``).
+- shuffle (boolean, optional): set to ``True`` to have the data reshuffled at every epoch (default: ``False``).
+- num_workers (int, optional): set to values >0 to have more workers to load the data. argument for torch.utils.data.DataLoader. (default: ``15``). 
+- window_hop
+-load_data
+- style_iters
+- num_training_sample
+- nample_all_styles
+- repeat_text
+- quantile_sample
+- quantile_num_training_sample
+- weighted
+- filler
+
 ```markdown
+from data.dataUtils import Data 
+data = Data('../path/to/data/', 'oliver', ['pose/data', 'audio/log_mel_512', 'text/bert']
 
-from data import Data
-
-data = Data('../path/to/data/', 'lec_cosmic', ['pose/data, audio/logtext/bert'])
-
+for batch in data.train:
+    break
+    print(batch).
 ```
 
 

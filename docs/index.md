@@ -15,13 +15,17 @@ The dataset is used in:
 
 ## Table of Contents
 1. Link to data
-2. CSV file with specific intervals and source
-3. Code
-4. Examples
-5. Reference
+2. Code
+3. Examples
+4. Reference
 
 
-### Markdown
+### Link to data:
+Data can be downloaded here : LINK HERE
+We've also included a csv file, in which you can see the video source and the specific section we took the intervals from.
+
+
+### Code
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -42,16 +46,6 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chahuja/PATS/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 
 ### Reference

@@ -2,17 +2,19 @@
 
 <img src="https://user-images.githubusercontent.com/43928520/90432137-1cbcaf80-e098-11ea-8491-0f7c92da4b29.png" width="100" height="100">
 
-The PATS dataset contains aligned transcribed language, audio, gesture data for 25 speakers (including 10 speakers from [Ginosar, et al.](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html) *) to offer a total of 251 hours of data, with a mean of 10.7 seconds and a standard deviation of 13.5 seconds per interval. The demographics of the speakers include 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists.
+## Overview of PATS
+* Contains Transcribed Language, Audio, Pose Data (3 features)
+* 251 hours of data (mean: 10.7s, s.d: 13.5s)
+* 425 Speakers (including 10 speakers from [Ginosar, et al.](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html) *)\
+* 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists.
+* Includes various representations of features
 
-The dataset includes the following 3 features:
+| Features | Available Representations | Description |
+| :---: | :---: | :---: |
+| Audio | Log-mel Spectrograms | Audio directly scraped from Youtube |
+| Language | BERT, Word2Vec | Transcript derived from Google ASR, WER = 0.29, Bert uses [HuggingFace](https://huggingface.co/transformers/model_doc/bert.html)* |
+| Gestures | OpenPose Skeletal Keypoints | [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)* |
 
-Aligned Transcriptions: As manual transcriptions are often not aligned and not readily available, we use Google Automatic Speech Recognition to collect subtitles and aligned timings of each spoken word.he average Word Error Rate of the transcriptions, calculated on the set of available transcriptions (i.e.  manually inputted Youtube subtitles), using the Fisher-Wagner algorithm is 0.29.
-
-Pose: Each speaker’s pose is represented via skeletal keypoints collected via OpenPose. It consists of of 52 coordinates of an individual’s major joints for each frame at 15 framesper second, which we rescale by holding the length of each individual’s shoulder constant.
-
-Audio: We represent audio features as spectrograms, which is a rich input represen-tation shown to be useful for gesture generation.
-
-The dataset is used in:
 [Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach](https://arxiv.org/abs/2007.12553) *
 
 ## Table of Contents
@@ -53,4 +55,15 @@ Syntax highlighted code block
 ### Examples
 
 ### Reference
-If you found this code useful, please cite the following paper:
+If you found this dataset helpful, please cite the following paper:
+
+```
+@misc{ahuja2020style,
+    title={Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach},
+    author={Chaitanya Ahuja and Dong Won Lee and Yukiko I. Nakano and Louis-Philippe Morency},
+    year={2020},
+    eprint={2007.12553},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```

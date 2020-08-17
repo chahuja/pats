@@ -17,7 +17,7 @@
 | Language | BERT, Word2Vec | Transcript derived from Google ASR, WER = 0.29, Bert uses [HuggingFace](https://huggingface.co/transformers/model_doc/bert.html)* |
 | Gestures | OpenPose Skeletal Keypoints | [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)* |
 
-[Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach](https://arxiv.org/abs/2007.12553) *
+
 
 ## Table of Contents
 1. [Link to data](#Link-to-data)

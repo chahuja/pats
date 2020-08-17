@@ -7,7 +7,7 @@
 ## Overview of PATS
 * Contains transcribed language, audio, pose data (3 features)
 * 251 hours of data (Mean: 10.7s, Standard Deviation: 13.5s)
-* 425 Speakers (including 10 speakers from [Ginosar, et al.](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html) )
+* 25 Speakers (including 10 speakers from [Ginosar, et al.](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html) )
 * 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists.
 * Includes various representations of features/
 

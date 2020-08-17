@@ -1,3 +1,17 @@
+<html lang="en-us"><head>
+  <meta charset="UTF-8">
+  <title> Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach by chahuja</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  <link href="style2.css" rel="stylesheet">
+  
+  <link href="style.css" rel="stylesheet">
+</head>
+
+
 # PATS (Pose, Audio, Transcript, Style) Dataset
 
 <img src="https://user-images.githubusercontent.com/43928520/90432137-1cbcaf80-e098-11ea-8491-0f7c92da4b29.png" width="100" height="100">

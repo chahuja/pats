@@ -15,7 +15,7 @@
 
 ## Dataset Features
 | Features | Available Representations | Description |
-| :---: | :---: | :---: |
+| :--- | :---: | ---: |
 | Audio | Log-mel Spectrograms | Audio directly scraped from Youtube |
 | Language | BERT, Word2Vec | Transcript derived from Google ASR, WER = 0.29, Bert uses [HuggingFace](https://huggingface.co/transformers/model_doc/bert.html) |
 | Gestures | OpenPose Skeletal Keypoints | [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) |

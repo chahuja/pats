@@ -21,7 +21,7 @@ The dataset is used in:
 
 
 ### Link to data:
-Data can be downloaded here : LINK HERE
+Data can be downloaded here : LINK HERE\
 We've also included a csv file, in which you can see the video source and the specific section we took the intervals from.
 
 

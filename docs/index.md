@@ -1,7 +1,5 @@
 # PATS (Pose, Audio, Transcript, Style) Dataset
 
-![logo]({{ site.url }}/docs/image.png)
-
 The PATS dataset contains aligned transcribed language, audio, gesture data for 25 speakers (including 10 speakers from [Ginosar, et al.](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html) *) to offer a total of 251 hours of data, with a mean of 10.7 seconds and a standard deviation of 13.5 seconds per interval. The demographics of the speakers include 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists.
 
 The dataset includes the following 3 features:

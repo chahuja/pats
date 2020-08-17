@@ -33,7 +33,7 @@ We've also included a csv file, in which you can see the video source and the sp
 
 ## Requirements:
 
-## Example
+## Examples
 
 Arguments:
 - path2data (str): path to dataset.
@@ -64,9 +64,6 @@ for batch in data.train:
     break
     print(batch).
 ```
-
-
-### Examples
 
 ### Reference
 If you found this dataset helpful, please cite the following paper:

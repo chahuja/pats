@@ -1,5 +1,3 @@
-# Test
-
 # PATS (Pose, Audio, Transcript, Style) Dataset <img src="https://user-images.githubusercontent.com/43928520/90432137-1cbcaf80-e098-11ea-8491-0f7c92da4b29.png" width="100" height="100">
 
 ## Overview of PATS

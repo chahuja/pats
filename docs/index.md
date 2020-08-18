@@ -4,8 +4,8 @@
 * Contains transcribed language, audio, pose data (3 features)
 * 251 hours of data (Mean: 10.7s, Standard Deviation: 13.5s)
 * 25 Speakers (including 10 speakers from [Ginosar, et al.](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html) )
-* 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists.
-* Includes various representations of features/
+* 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists
+* Includes various representations of features
 
 <img src="https://user-images.githubusercontent.com/43928520/90454983-c022ba00-e0c2-11ea-991e-36bd5cb3b38b.png" width="1000" height="800">
 
@@ -14,8 +14,8 @@
 | Features | Available Representations | Description |
 | :--- | :---: | ---: |
 | Audio | Log-mel Spectrograms | Audio directly scraped from Youtube |
-| Language | BERT, Word2Vec | Transcript derived from Google ASR, WER = 0.29, Bert uses [HuggingFace](https://huggingface.co/transformers/model_doc/bert.html) |
-| Gestures | OpenPose Skeletal Keypoints | [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) |
+| Language | BERT, Word2Vec | Transcript derived from [Google ASR](https://cloud.google.com/speech-to-text), WER = 0.29, Bert uses [HuggingFace](https://huggingface.co/transformers/model_doc/bert.html) |
+| Gestures | OpenPose Skeletal Keypoints | Derived from [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) |
 
 
 

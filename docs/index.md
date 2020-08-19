@@ -17,7 +17,7 @@
 | :--- | :---: | ---: |
 | Audio | Log-mel Spectrograms | Audio directly scraped from Youtube |
 | Language | BERT, Word2Vec | Transcript derived from [Google ASR](https://cloud.google.com/speech-to-text), WER = 0.29, Bert uses [HuggingFace](https://huggingface.co/transformers/model_doc/bert.html) |
-| Gestures | OpenPose Skeletal Keypoints | Derived from [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) |
+| Pose | OpenPose Skeletal Keypoints | Derived from [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) |
 
 
 

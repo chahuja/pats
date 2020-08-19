@@ -1,3 +1,4 @@
-project-name: PAT TEST
+title: PATS Dataset
+description: Pose-Audio-Transcript-Style Dataset
 theme: jekyll-theme-cayman
 markdown: kramdown

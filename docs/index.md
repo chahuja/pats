@@ -1,4 +1,4 @@
-# PATS (Pose, Audio, Transcript, Style) Dataset <img src="https://user-images.githubusercontent.com/43928520/90432137-1cbcaf80-e098-11ea-8491-0f7c92da4b29.png" width="100" height="100">
+# PATS Dataset (**P**ose, **A**udio, **T**ranscript, **S**tyle) <img src="https://user-images.githubusercontent.com/43928520/90432137-1cbcaf80-e098-11ea-8491-0f7c92da4b29.png" width="100" height="100">
 
 * Contains transcribed **Pose** data with aligned **Audio** and **Transcriptions**
     - 25 Speakers with different **Styles** 

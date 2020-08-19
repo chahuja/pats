@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://chahuja.com/pats/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>PATS Dataset (Pose, Audio, Transcript, Style) | PATS Dataset</title>
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="PATS Dataset (Pose, Audio, Transcript, Style)">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Pose-Audio-Transcript-Style Dataset">
+<meta property="og:description" content="Pose-Audio-Transcript-Style Dataset">
+<link rel="canonical" href="http://chahuja.com/pats/">
+<meta property="og:url" content="http://chahuja.com/pats/">
+<meta property="og:site_name" content="PATS Dataset">
+<script type="application/ld+json">
+{"@type":"WebSite","url":"http://chahuja.com/pats/","headline":"PATS Dataset (Pose, Audio, Transcript, Style)","description":"Pose-Audio-Transcript-Style Dataset","name":"PATS Dataset","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="./PATS Dataset (Pose, Audio, Transcript, Style) _ PATS Dataset_files/style.css">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">PATS Dataset</h1>
+      <h2 class="project-tagline">Pose-Audio-Transcript-Style Dataset</h2>
+      
+        <a href="https://github.com/chahuja/pats" class="btn">View on GitHub</a>
+      
+      
+    </section>
+
+    <section class="main-content">
+      <h1 id="pats-dataset-pose-audio-transcript-style-">PATS Dataset (<strong>P</strong>ose, <strong>A</strong>udio, <strong>T</strong>ranscript, <strong>S</strong>tyle) <img src="./PATS Dataset (Pose, Audio, Transcript, Style) _ PATS Dataset_files/90432137-1cbcaf80-e098-11ea-8491-0f7c92da4b29.png" width="100" height="100"></h1>
+
+<ul>
+  <li>Contains transcribed <strong>Pose</strong> data with aligned <strong>Audio</strong> and <strong>Transcriptions</strong>
+    <ul>
+      <li>25 Speakers with different <strong>Styles</strong></li>
+      <li>Includes 10 speakers from <a href="https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html">Ginosar, et al. (CVPR 2019)</a></li>
+      <li>15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists</li>
+    </ul>
+  </li>
+  <li>251 hours of data
+    <ul>
+      <li>Mean: 10.7s per interval</li>
+      <li>Standard Deviation: 13.5s per segment</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="./PATS Dataset (Pose, Audio, Transcript, Style) _ PATS Dataset_files/90454983-c022ba00-e0c2-11ea-991e-36bd5cb3b38b.png" width="1000"></p>
+
+<h2 id="dataset-features">Dataset Features</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Features</th>
+      <th style="text-align: center">Available Representations</th>
+      <th style="text-align: right">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Audio</td>
+      <td style="text-align: center">Log-mel Spectrograms</td>
+      <td style="text-align: right">Audio directly scraped from Youtube</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Language</td>
+      <td style="text-align: center">BERT, Word2Vec</td>
+      <td style="text-align: right">Transcript derived from <a href="https://cloud.google.com/speech-to-text">Google ASR</a>, WER = 0.29, Bert uses <a href="https://huggingface.co/transformers/model_doc/bert.html">HuggingFace</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Pose</td>
+      <td style="text-align: center">OpenPose Skeletal Keypoints</td>
+      <td style="text-align: right">Derived from <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="link-to-data">Link to data:</h2>
+<p>Data can be downloaded here : LINK HERE<br>
+We’ve also included a csv file, in which you can see the video source and the specific section we took the intervals from.</p>
+
+<h2 id="requirements">Requirements:</h2>
+
+<h2 id="tasks">Tasks</h2>
+
+<h3 id="reference">Reference</h3>
+<p>If you found this dataset helpful, please cite the following paper:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@misc{ahuja2020style,
+    title={Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach},
+    author={Chaitanya Ahuja and Dong Won Lee and Yukiko I. Nakano and Louis-Philippe Morency},
+    year={2020},
+    eprint={2007.12553},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+</code></pre></div></div>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/chahuja/pats">pats</a> is maintained by <a href="https://github.com/chahuja">chahuja</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  
+
+</body></html>

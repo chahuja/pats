@@ -2,7 +2,7 @@
 
 * Contains transcribed **Pose** data with aligned **Audio** and **Transcriptions**
     - 25 Speakers with different **Styles** 
-    - Includes 10 speakers from [Ginosar, et al. (CVPR 2019)](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html) )
+    - Includes 10 speakers from [Ginosar, et al. (CVPR 2019)](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html)
     - 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists
 * 251 hours of data 
     - Mean: 10.7s per interval

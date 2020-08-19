@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://chahuja.com/pats/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>PATS (Pose, Audio, Transcript, Style) Dataset | PAT TEST</title>
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="PATS (Pose, Audio, Transcript, Style) Dataset">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Pose-Audio-Transcript-Style Dataset">
+<meta property="og:description" content="Pose-Audio-Transcript-Style Dataset">
+<link rel="canonical" href="http://chahuja.com/pats/">
+<meta property="og:url" content="http://chahuja.com/pats/">
+<meta property="og:site_name" content="PAT TEST">
+<script type="application/ld+json">
+{"@type":"WebSite","description":"Pose-Audio-Transcript-Style Dataset","url":"http://chahuja.com/pats/","name":"PAT TEST","headline":"PATS (Pose, Audio, Transcript, Style) Dataset","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="./PATS (Pose, Audio, Transcript, Style) Dataset _ PAT TEST_files/style.css">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">pats</h1>
+      <h2 class="project-tagline">Pose-Audio-Transcript-Style Dataset </h2>
+      
+        <a href="https://github.com/chahuja/pats" class="btn">View on GitHub</a>
+      
+      
+    </section>
+
+    <section class="main-content">
+      <h1 id="pats-pose-audio-transcript-style-dataset-">PATS (Pose, Audio, Transcript, Style) Dataset <img src="./PATS (Pose, Audio, Transcript, Style) Dataset _ PAT TEST_files/90432137-1cbcaf80-e098-11ea-8491-0f7c92da4b29.png" width="100" height="100"></h1>
+
+<h2 id="overview-of-pats">Overview of PATS</h2>
+<ul>
+  <li>Contains transcribed language, audio, pose data (3 features)</li>
+  <li>251 hours of data (Mean: 10.7s, Standard Deviation: 13.5s)</li>
+  <li>25 Speakers (including 10 speakers from <a href="https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html">Ginosar, et al.</a> )</li>
+  <li>15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists</li>
+  <li>Includes various representations of features</li>
+</ul>
+
+<p><img src="./PATS (Pose, Audio, Transcript, Style) Dataset _ PAT TEST_files/90454983-c022ba00-e0c2-11ea-991e-36bd5cb3b38b.png" width="1000" height="800"></p>
+
+<h2 id="dataset-features">Dataset Features</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Features</th>
+      <th style="text-align: center">Available Representations</th>
+      <th style="text-align: right">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Audio</td>
+      <td style="text-align: center">Log-mel Spectrograms</td>
+      <td style="text-align: right">Audio directly scraped from Youtube</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Language</td>
+      <td style="text-align: center">BERT, Word2Vec</td>
+      <td style="text-align: right">Transcript derived from <a href="https://cloud.google.com/speech-to-text">Google ASR</a>, WER = 0.29, Bert uses <a href="https://huggingface.co/transformers/model_doc/bert.html">HuggingFace</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Gestures</td>
+      <td style="text-align: center">OpenPose Skeletal Keypoints</td>
+      <td style="text-align: right">Derived from <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+  <li><a href="http://chahuja.com/pats/#Link-to-data">Link to data</a></li>
+  <li><a href="http://chahuja.com/pats/#Requirements">Requirements</a></li>
+  <li><a href="http://chahuja.com/pats/#Examples">Example Script</a></li>
+  <li><a href="http://chahuja.com/pats/#Reference">Reference</a></li>
+</ol>
+
+<h2 id="link-to-data">Link to data:</h2>
+<p>Data can be downloaded here : LINK HERE<br>
+We’ve also included a csv file, in which you can see the video source and the specific section we took the intervals from.</p>
+
+<h2 id="requirements">Requirements:</h2>
+
+<h2 id="examples">Examples</h2>
+
+<p>Arguments:</p>
+<ul>
+  <li>path2data (str): path to dataset.</li>
+  <li>speaker (str): speaker name.</li>
+  <li>modalities (list of str): list of modalities to wrap in the dataloader. These modalities are keys of the hdf5 files which were preprocessed earlier (default: <code class="language-plaintext highlighter-rouge">['pose/data', 'audio/log_mel']</code>)</li>
+  <li>fs_new (list, optional): new frequency of modalities, to which the data is up/downsampled to. (default: <code class="language-plaintext highlighter-rouge">[15, 15]</code>).</li>
+  <li>time (float, optional): time snippet length in seconds. (default: <code class="language-plaintext highlighter-rouge">4.3</code>).</li>
+  <li>split (tuple or None, optional): split fraction of train and dev sets. Must add up to less than 1. If <code class="language-plaintext highlighter-rouge">None</code>, use <code class="language-plaintext highlighter-rouge">dataset</code> columns in the master dataframe (loaded in self.df) to decide train, dev and test split. (default: <code class="language-plaintext highlighter-rouge">None</code>).</li>
+  <li>batch_size (int, optional): batch size of the dataloader. (default: <code class="language-plaintext highlighter-rouge">100</code>).</li>
+  <li>shuffle (boolean, optional): set to <code class="language-plaintext highlighter-rouge">True</code> to have the data reshuffled at every epoch (default: <code class="language-plaintext highlighter-rouge">False</code>).</li>
+  <li>num_workers (int, optional): set to values &gt;0 to have more workers to load the data. argument for torch.utils.data.DataLoader. (default: <code class="language-plaintext highlighter-rouge">15</code>).</li>
+  <li>window_hop
+-load_data</li>
+  <li>style_iters</li>
+  <li>num_training_sample</li>
+  <li>nample_all_styles</li>
+  <li>repeat_text</li>
+  <li>quantile_sample</li>
+  <li>quantile_num_training_sample</li>
+  <li>weighted</li>
+  <li>filler</li>
+</ul>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from data.dataUtils import Data 
+data = Data('../path/to/data/', 'oliver', ['pose/data', 'audio/log_mel_512', 'text/bert']
+
+for batch in data.train:
+    break
+    print(batch).
+</code></pre></div></div>
+
+<h3 id="reference">Reference</h3>
+<p>If you found this dataset helpful, please cite the following paper:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@misc{ahuja2020style,
+    title={Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach},
+    author={Chaitanya Ahuja and Dong Won Lee and Yukiko I. Nakano and Louis-Philippe Morency},
+    year={2020},
+    eprint={2007.12553},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+</code></pre></div></div>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/chahuja/pats">pats</a> is maintained by <a href="https://github.com/chahuja">chahuja</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  
+
+</body></html>

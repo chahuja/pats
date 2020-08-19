@@ -1,13 +1,16 @@
 # PATS (Pose, Audio, Transcript, Style) Dataset <img src="https://user-images.githubusercontent.com/43928520/90432137-1cbcaf80-e098-11ea-8491-0f7c92da4b29.png" width="100" height="100">
 
 ## Overview of PATS
-* Contains transcribed language, audio, pose data (3 features)
-* 251 hours of data (Mean: 10.7s, Standard Deviation: 13.5s)
-* 25 Speakers (including 10 speakers from [Ginosar, et al.](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html) )
-* 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists
-* Includes various representations of features
+* Contains transcribed **pose** data with aligned **audio** and **transcriptions**
+    - 25 Speakers with different **Styles** 
+    - Includes 10 speakers from [Ginosar, et al. (CVPR 2019)](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html) )
+    - 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists
+* 251 hours of data 
+    - Mean: 10.7s per interval
+    - Standard Deviation: 13.5s per segment
 
-<img src="https://user-images.githubusercontent.com/43928520/90454983-c022ba00-e0c2-11ea-991e-36bd5cb3b38b.png" width="1000" height="800">
+
+<img src="https://user-images.githubusercontent.com/43928520/90454983-c022ba00-e0c2-11ea-991e-36bd5cb3b38b.png" width="1000">
 
 ## Dataset Features
 

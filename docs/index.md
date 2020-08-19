@@ -1,7 +1,6 @@
 # PATS (Pose, Audio, Transcript, Style) Dataset <img src="https://user-images.githubusercontent.com/43928520/90432137-1cbcaf80-e098-11ea-8491-0f7c92da4b29.png" width="100" height="100">
 
-## Overview of PATS
-* Contains transcribed **pose** data with aligned **audio** and **transcriptions**
+* Contains transcribed **Pose** data with aligned **Audio** and **Transcriptions**
     - 25 Speakers with different **Styles** 
     - Includes 10 speakers from [Ginosar, et al. (CVPR 2019)](https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html) )
     - 15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists

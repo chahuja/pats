@@ -93,30 +93,31 @@
     <tr>
       <td style="text-align: left">Audio</td>
       <td style="text-align: left">Log-mel Spectrograms</td>
-      <td style="text-align: left">Audio directly scraped from Youtube</td>
+      <td style="text-align: left">Audio scraped from Youtube</td>
     </tr>
     <tr>
-      <td rowspan = "3">Language</td>
+      <td rowspan = "3">Transcripts</td>
       <td> Word Tokens </td>
-      <td> Transcribed by <a href="https://cloud.google.com/speech-to-text">Google ASR</a>, Estimated WER = 0.29 </td>
+      <td>Transcribed using <a href="https://cloud.google.com/speech-to-text">Google ASR</a> with an estimated word error rate of 0.29* (*-estimated on available transcripts for a subset of videos)
+         </td>
     </tr>
      
     <tr>
       <td> Bert Embeddings</td>
-      <td style="text-align: left">bert_base_uncased from <a href="https://huggingface.co/transformers/model_doc/bert.html">HuggingFace</a>,
-         <a href="https://arxiv.org/abs/1810.04805"> Devlin, et al. (NAACL 2019)</a>
+      <td style="text-align: left"> Pre-trained model 'bert_base_uncased' from <a href="https://huggingface.co/transformers/model_doc/bert.html">HuggingFace</a>,
+         based on <a href="https://arxiv.org/abs/1810.04805"> Devlin, et al. (NAACL 2019)</a>
           </td>
     </tr>
      
     <tr>
       <td> Word2Vec Embeddings </td>
-      <td style="text-align: left"> <a href="https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Mikolov et al. (NIPS 2013)</a> </td>
+      <td style="text-align: left">  <a href="https://code.google.com/archive/p/word2vec/"> Word2Vec (NAACL 2019)</a>  based on <a href="https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Mikolov et al. (NIPS 2013)</a> </td>
     </tr>
      
     <tr>
       <td style="text-align: left">Pose</td>
       <td style="text-align: left">2D Skeletal Keypoints</td>
-      <td style="text-align: left"><a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a></td>
+      <td style="text-align: left">Processed using <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a></td>
     </tr>
   </tbody>
 </table>

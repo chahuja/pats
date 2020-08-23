@@ -2,10 +2,6 @@ body {
     background: #e0e0e0
 }
 
-.imgContainer{
-    float:left;
-}
-
 .anchor-target:target::before {
     display: block;
     content: " ";
@@ -377,3 +373,4 @@ iframe.hidden
 {
     display:none
 }
+

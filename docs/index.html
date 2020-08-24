@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <!-- saved from url=(0024)http://chahuja.com/pats/ -->
 <html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
   <link rel="stylesheet" type="text/css" href="css/github-light.css" media="screen">
-  <link href="style2.css" rel="stylesheet">
-  
   <link href="style.css" rel="stylesheet">
+  <link href="style2.css" rel="stylesheet">
 </head>
 <body style="background-color: white;">
-
-<title>PATS Dataset (Pose, Audio, Transcript, Style) | PATS Dataset</title>
-<meta name="generator" content="Jekyll v3.9.0">
-<meta property="og:title" content="PATS Dataset (Pose, Audio, Transcript, Style)">
-<meta property="og:locale" content="en_US">
-<meta name="description" content="Pose-Audio-Transcript-Style Dataset">
-<meta property="og:description" content="Pose-Audio-Transcript-Style Dataset">
-<link rel="canonical" href="http://chahuja.com/pats/">
-<meta property="og:url" content="http://chahuja.com/pats/">
-<meta property="og:site_name" content="PATS Dataset">
-<script type="application/ld+json">
-{"@type":"WebSite","url":"http://chahuja.com/pats/","headline":"PATS Dataset (Pose, Audio, Transcript, Style)","description":"<strong>P</strong>ose, <strong>A</strong>udio, <strong>T</strong>ranscript, <strong>S</strong>tyle","name":"PATS Dataset","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
+  
+  <title>PATS Dataset (Pose, Audio, Transcript, Style) | PATS Dataset</title>
+  <meta name="generator" content="Jekyll v3.9.0">
+  <meta property="og:title" content="PATS Dataset (Pose, Audio, Transcript, Style)">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content="Pose-Audio-Transcript-Style Dataset">
+  <meta property="og:description" content="Pose-Audio-Transcript-Style Dataset">
+  <link rel="canonical" href="http://chahuja.com/pats/">
+  <meta property="og:url" content="http://chahuja.com/pats/">
+  <meta property="og:site_name" content="PATS Dataset">
+  <script type="application/ld+json">
+    {"@type":"WebSite","url":"http://chahuja.com/pats/","headline":"PATS Dataset (Pose, Audio, Transcript, Style)","description":"<strong>P</strong>ose, <strong>A</strong>udio, <strong>T</strong>ranscript, <strong>S</strong>tyle","name":"PATS Dataset","@context":"https://schema.org"}</script>
+    <!-- End Jekyll SEO tag -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
   </head>
   <body>
     <section class="page-header">
-      <img src="https://user-images.githubusercontent.com/43928520/90432137-1cbcaf80-e098-11ea-8491-0f7c92da4b29.png" width="100" height="100">
-       
-       
+      <img src="figs/pats_logo.png" width="100">
+      
+      
       <h1 class="project-name">PATS Dataset </h1>
       <h2 class="project-tagline"><strong>P</strong>ose, <strong>A</strong>udio, <strong>T</strong>ranscript, <strong>S</strong>tyle</h2>
       
@@ -39,147 +38,199 @@
       
       
     </section>
-
-    <section class="main-content">
-       
-<h2 id="intro">Why PATS?</h2>
-<p>PATS was developed to address audio and text signals in the task of pose generation. Utilizing both signals would allow us to generate relevant and expressive gestures 
-   useful for human computer interaction. </br> </p>
- 
-<iframe width="560" height="315" src="https://www.youtube.com//embed/BQf1e-K_oek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen float: "center"></iframe>
-       
-<h2 id="tasks">Tasks</h2>
- The PATS dataset allows us to explore the following tasks:
-
-<h3 id="CMT">Cross-Modal Translation</h3>
-  The three modalities (Pose, Audio, Transcriptions), present in the dataset, offer users with an unique task of translation between each other.
-  <li>Audio to Pose</li>
-  <li>Transcript to Pose</li>
-  <li>Audio + Transcript to Pose</li>     
-
-       
-<h3 id="ST">Style Transfer</h3>
-  The data also poses and interesting task of transferring Style and Language. As pose styles and language styles are often idiosyncratic to each speaker, PATS offers a unique dataset to perform research on style transfer of various modalities.
-  <li>Gesture Style Transfer</li>
-  <li>Language Style Transfer</li>
-       
-<h3 id="GT">Grounding </h3>
-   An important question is learning the pairing of multiple modalities: grounding. With aligned pose audio and transcripts, PATS provides a good platform for conducting research for multimodal grounding of conversational language to hand gestures.
-       
-<h2 id="details">What can you find in this dataset?</h2>
- 
-<div>       
-  <ul style="float: left; max-width: 400px">
-  <li>Transcribed <strong>Pose</strong> data with aligned <strong>Audio</strong> and <strong>Transcriptions</strong>
-    <ul>
-      <li>25 Speakers with different <strong>Styles</strong></li>
-      <li>Includes 10 speakers from <a href="https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html">Ginosar, et al. (CVPR 2019)</a></li>
-      <li>15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists</li>
-    </ul>
-  </li>
-  <li>251 hours of data 
-    <ul>
-      <li>Around ~ 84000 intervals</li> 
-      <li>Mean: 10.7s per interval</li>
-      <li>Standard Deviation: 13.5s per interval<br></li>
-    </ul>
-  </li>
-</ul>
-<img src="https://user-images.githubusercontent.com/43928520/90454983-c022ba00-e0c2-11ea-991e-36bd5cb3b38b.png" width = "360px" border="px" style="float: right;" />
-</div>
-       
-       
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Features</th>
-      <th style="text-align: left">Available Representations</th>
-      <th style="text-align: left">Collection Methodology</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Audio</td>
-      <td style="text-align: left">Log-mel Spectrograms</td>
-      <td style="text-align: left">Audio scraped from Youtube</td>
-    </tr>
-    <tr>
-      <td rowspan = "3">Transcripts</td>
-      <td> Word Tokens </td>
-      <td>Transcribed using <a href="https://cloud.google.com/speech-to-text">Google ASR</a> with an estimated word error rate of 0.29* (*-estimated on available transcripts for a subset of videos)
-         </td>
-    </tr>
-     
-    <tr>
-      <td> Bert Embeddings</td>
-      <td style="text-align: left"> Pre-trained model 'bert_base_uncased' from <a href="https://huggingface.co/transformers/model_doc/bert.html">HuggingFace</a>,
-         based on <a href="https://arxiv.org/abs/1810.04805"> Devlin, et al. (NAACL 2019)</a>
-          </td>
-    </tr>
-     
-    <tr>
-      <td> Word2Vec Embeddings </td>
-      <td style="text-align: left">  <a href="https://code.google.com/archive/p/word2vec/"> Word2Vec</a>  based on <a href="https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Mikolov et al. (NIPS 2013)</a> </td>
-    </tr>
-     
-    <tr>
-      <td style="text-align: left">Pose</td>
-      <td style="text-align: left">2D Skeletal Keypoints</td>
-      <td style="text-align: left">Processed using <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a></td>
-    </tr>
-  </tbody>
-</table>
-       
-       
-<h3 id="dataset_navi">Navigating Through Speakers</h3>
-
-<p>
-The speakers in PATS have diverse lexical content in their transcripts along with diverse gestures. 
-The following graphs will help you navigate through the speakers in the dataset, 
-should you want to work with specific speakers with a different gesture and/or lexical diversities. </p> 
-
-<p>Fig 1 shows speakers clustered hierarchically based on the content of their transcripts and Fig 2 shows each speaker's position on a 
-lexical diversity vs spatial extent plot. </p> 
-
-<p> As shown in Fig. 1, speakers in the same domain (i.e. TV Show Hosts) share similar language, as demonstrated in the clusters. 
-   Furthermore, in Fig. 2, we can see that TV show speakers are generally more expressive with their hands and and words while Televangelists are less so. 
-   Speakers on the top right corner of Fig 2, are more challenging to model in the task of gesture generation as they have a greater diversity of vocabulary
-   as well as gestures.
-   </p>
-  
-<img src="https://user-images.githubusercontent.com/43928520/90968972-ea101e00-e4c0-11ea-81dc-3e0fd25a8252.png" width="1000">
-
-
-
-<h3 id="reference">Reference</h3>
-<p>If you found this dataset helpful, please cite the following paper:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight">
-<code>
-@inproceedings{ahuja2020style,
-    title={Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach},
-    author={Chaitanya Ahuja and Dong Won Lee and Yukiko I. Nakano and Louis-Philippe Morency},
-    venue = {European Conference on Computer Vision (ECCV)}
-    year={2020},
-    month = {August},
-    year = {2020},
-    url={https://arxiv.org/abs/2007.12553}
-}
-</code></pre></div></div>
-
-
-      <footer class="site-footer">
-
-         
-      <h3 id="Authors">Authors</h3>
-      <p>Chaitanya Ahuja, Dong Won Lee, Yukiko I. Nakano, Louis-Phillippe Morency</p>
-  
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
-      </footer>
-    </section>
-
     
-  
-
-</body></html>
+    <section class="main-content">
+      
+      <h1 id="intro">Why PATS?</h1>
+      <p>PATS was collected to study correlation of co-speech gestures with audio and text signals. The dataset consists of a <b>diverse</b> and <b>large amount</b> of aligned <b>pose, audio and transcripts</b>. 
+        With this dataset, we hope to provide a benchmark which would help develop technologies for virtual agents which generate natural and relevant gestures. </br> </p>
+        <center> 
+          <iframe width="560" height="315" src="https://www.youtube.com//embed/BQf1e-K_oek?autoplay=1&mute=1&loop=1&playlist=BQf1e-K_oek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen float: "center"></iframe>
+        </center>       
+        
+        <h1 id="details">What can you find in this dataset?</h1>
+        <div>       
+          <ul style="float: left; max-width: 480px">
+            <li>Transcribed <strong>Pose</strong> data with aligned <strong>Audio</strong> and <strong>Transcriptions</strong>
+              <ul>
+                <li>25 Speakers with different <strong>Styles</strong></li>
+                <li>Includes 10 speakers from <a href="https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html">Ginosar, et al. (CVPR 2019)</a></li>
+                <li>15 talk show hosts, 5 lecturers, 3 YouTubers, and 2 televangelists</li>
+              </ul>
+            </li>
+            <li>251 hours of data 
+              <ul>
+                <li>Around ~ 84000 intervals</li> 
+                <li>Mean: 10.7s per interval</li>
+                <li>Standard Deviation: 13.5s per interval<br></li>
+              </ul>
+            </li>
+          </ul>
+          <img src="https://user-images.githubusercontent.com/43928520/90454983-c022ba00-e0c2-11ea-991e-36bd5cb3b38b.png" width = "360px" border="px" style="float: center;" />
+        </div>
+        
+        <h1 id="tasks">Tasks</h1>
+        Three modalities -i.e. Pose, Audio, Transcriptions- in many Styles available in the PATS dataset present a unique opportunity for the following tasks,
+        
+        <!-- <h3 id="CMT">Cross-Modal Translation</h3>
+          The three modalities (Pose, Audio, Transcriptions), present in the dataset, offer users with an unique task of translation between each other.
+          <li>Audio to Pose</li>
+          <li>Transcript to Pose</li>
+          <li>Audio + Transcript to Pose</li>     
+          
+          
+          <h3 id="ST">Style Transfer</h3>
+          The data also poses and interesting task of transferring Style and Language. As pose styles and language styles are often idiosyncratic to each speaker, PATS offers a unique dataset to perform research on style transfer of various modalities.
+          <li>Gesture Style Transfer</li>
+          <li>Language Style Transfer</li>
+          
+          <h3 id="GT">Grounding </h3>
+          An important question is learning the pairing of multiple modalities: grounding. With aligned pose audio and transcripts, PATS provides a good platform for conducting research for multimodal grounding of conversational language to hand gestures. -->
+          
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align: center">Cross-Modal Translation</th>
+                <th style="text-align: center">Style Transfer</th>
+                <th style="text-align: center">Grounding</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: left" width="320px"> Pose Audio and Transcripts are aligned making PATS a good test-bench for cross-modal translation tasks,
+                  <li>Audio to Pose</li>
+                  <li>Transcript to Pose</li>
+                  <li>Audio + Transcript to Pose</li></td>  
+                  
+                  
+                  <td style="text-align: left" width="320px">As pose styles and language styles are often idiosyncratic to each speaker, PATS offers a unique dataset to perform research on style transfer of various modalities.
+                    <li>Gesture Style Transfer</li>
+                    <li>Language Style Transfer</li></td>
+                    
+                    <td style="text-align: left" width="320px">An important question is learning the pairing of multiple modalities: grounding. With aligned pose audio and transcripts, PATS provides a good platform for conducting research for multimodal grounding of conversational language to hand gestures.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h1 id="Features">Features</h1>
+              <table>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">Features</th>
+                    <th style="text-align: left">Available Representations</th>
+                    <th style="text-align: left">Collection Methodology</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">Audio</td>
+                    <td style="text-align: left">Log-mel Spectrograms</td>
+                    <td style="text-align: left">Audio scraped from Youtube</td>
+                  </tr>
+                  <tr>
+                    <td rowspan = "3">Transcripts</td>
+                    <td> Word Tokens </td>
+                    <td>Transcribed using <a href="https://cloud.google.com/speech-to-text">Google ASR</a> with an estimated word error rate of 0.29* (*-estimated on available transcripts for a subset of videos)
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td> Bert Embeddings</td>
+                    <td style="text-align: left"> Pre-trained model 'bert_base_uncased' from <a href="https://huggingface.co/transformers/model_doc/bert.html">HuggingFace</a>,
+                      based on <a href="https://arxiv.org/abs/1810.04805"> Devlin, et al. (NAACL 2019)</a>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td> Word2Vec Embeddings </td>
+                    <td style="text-align: left">  <a href="https://code.google.com/archive/p/word2vec/"> Word2Vec</a>  based on <a href="https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Mikolov et al. (NIPS 2013)</a> </td>
+                  </tr>
+                  
+                  <tr>
+                    <td style="text-align: left">Pose</td>
+                    <td style="text-align: left">2D Skeletal Keypoints</td>
+                    <td style="text-align: left">Processed using <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h1 id="dataset_navi">Navigating Through Speakers</h1>
+              
+              <p>
+                The speakers in PATS have diverse lexical content in their transcripts along with diverse gestures. 
+                The following graphs will help you navigate through the speakers in the dataset, 
+                should you want to work with specific speakers with a different gesture and/or lexical diversities. </p> 
+                
+                <p>Fig 1 shows speakers clustered hierarchically based on the content of their transcripts and Fig 2 shows each speaker's position on a 
+                  lexical diversity vs spatial extent plot. </p> 
+                  
+                  <p> As shown in Fig. 1, speakers in the same domain (i.e. TV Show Hosts) share similar language, as demonstrated in the clusters. 
+                    Furthermore, in Fig. 2, we can see that TV show speakers are generally more expressive with their hands and and words while Televangelists are less so. 
+                    Speakers on the top right corner of Fig 2, are more challenging to model in the task of gesture generation as they have a greater diversity of vocabulary
+                    as well as gestures.
+                  </p>
+                  
+                  <img src="https://user-images.githubusercontent.com/43928520/90968972-ea101e00-e4c0-11ea-81dc-3e0fd25a8252.png" width="1000">
+                  
+                  
+                  
+                  <h1 id="reference">Reference(s)</h1>
+                  <p>If you found this dataset helpful, please consider citing the following paper:</p>
+                  
+                  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight">
+                    <code>
+                      @inproceedings{ahuja2020style,
+                        title={Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach},
+                        author={Chaitanya Ahuja and Dong Won Lee and Yukiko I. Nakano and Louis-Philippe Morency},
+                        venue = {European Conference on Computer Vision (ECCV)}
+                        year={2020},
+                        month = {August},
+                        year = {2020},
+                        url={https://arxiv.org/abs/2007.12553}
+                      }
+                    </code></pre></div></div>
+                    
+                    
+                    
+                    <h1 id="Authors">Authors</h1>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td style="text-align: left; border:0px">
+                            <div class="authors">
+                              <img src="figs/chahuja.jpg" width="200px"><br>
+                              <a href="http://chahuja.com">Chaitanya Ahuja</a>
+                            </div>
+                          </td>
+                          <td style="text-align: left; border:0px">
+                            <div class="authors">
+                              <img src="figs/dong.jpg" width="200px"><br>
+                              <a href="javascript: void(0)">Dong Won Lee</a>
+                            </div>
+                          </td>
+                          <td style="text-align: left; border:0px">
+                            <div class="authors">
+                              <img src="figs/yukiko.jpg" width="200px"><br>
+                              <a href="http://www.ci.seikei.ac.jp/nakano/index_e.html">Yukiko Nakano</a>
+                            </div>
+                          </td>
+                          <td style="text-align: left; border:0px">
+                            <div class="authors">
+                              <img src="figs/lp.jpg" width="200px"><br>
+                              <a href="https://www.cs.cmu.edu/~morency/">Louis-Philippe Morency</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                      
+                      <footer class="site-footer">
+                        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+                      </footer>
+                    </section>
+                    
+                    
+                    
+                    
+                  </body></html>
+                  

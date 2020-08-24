@@ -68,3 +68,17 @@
 h1{
     text-align: center;
 }
+
+
+.authors{
+  max-width: 15rem;
+  min-height: 15rem;
+  background: #f3f6fa;
+  border: solid 4px #b1aee4;
+  padding: 1rem;
+  text-align: center;
+}
+
+thead{
+  background: #f3f6fa;
+}

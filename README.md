@@ -21,8 +21,8 @@ pats/data
       - bee
       - noah
   - raw
-      - oliver
       - oliver_cropped
+          - xxx.mp3
 ```
 
 The dataset consists of:
@@ -49,7 +49,7 @@ Heirarchy of the features in h5 files explained. To access a festure, both paren
     - `meta`: Pandas Dataframe with words, start_frame and end_frame
 
 ## Raw Features
-We provide links to original youtube videos to help download the relevant audio files. Rendering the generated animations with audio would require the raw audio and would be useful for user-studies.
+We provide links to original youtube videos in `cmu_intervals_df.csv` to help download the relevant audio files. Rendering the generated animations with audio would require the raw audio and would be useful for user-studies.
 
 # Dataset Download
 To download **processed** features of the dataset visit [here](http://chahuja.com/pats/download.html).
@@ -116,7 +116,7 @@ There are way too many arguments (#research) for `Data`. For most cases you migh
 - `num_training_iters (int or None)`: If value > 0, changes the training sampler to sample with replacement and value is the number of iterations per epoch. If value is None, the sampler samples without replacement and the number of iterations are inferred based on the size of the dataset. Default- None.
 
 ## Render
-Todo..
+Check the repository for [Mix-StAGE](https://github.com/chahuja/mix-stage) for rendering scripts.
 
 # Creating your own dataloader
 In case you prefer to create your own dataloaders, we would recommend checking out the [structure of the h5 files](#processed-features) and the last sections of the [Ipython Notebook](dataloader_tutorial.ipynb). We have a class [`HDF5`](data/common.py#L16) with many staticmethods which might be useful to load HDF5 files.

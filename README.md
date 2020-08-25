@@ -34,13 +34,13 @@ The dataset consists of:
 
 ## Processed Features
 - pose 
-    - data: XY coordinates of upper body pose relative to the neck joint. Joint order and parents can be found [here](https://github.com/chahuja/pats/data/skeleton.py#L40)
+    - data: XY coordinates of upper body pose relative to the neck joint. Joint order and parents can be found [here](https://github.com/chahuja/pats/blob/master/data/skeleton.py#L40)
     - normalize: same as data but the size of the body is normalized across speakers. In other words, each speaker is scaled to have the same shoulder length. This is especially useful in style transfer experiments where we would like the style of gestures to be independent of the size of the speaker.
     - confidence: confidence scores provided by openpose with 1 being most confident and 0 being least confident.
 - audio
-    - log_mel_400:  Log mel Spectrograms extracted with the function [here](https://github.com/chahuja/pats/data/audio.py#L38)
-    - log_mel_512: Log mel Spectrograms extracted with the function [here](https://github.com/chahuja/pats/data/audio.py#L32) 
-    - silence: Using [VAD](https://github.com/chahuja/pats/data/audio.py#L65) we estimate which segments have voice of the speaker and which just have noise.
+    - log_mel_400:  Log mel Spectrograms extracted with the function [here](https://github.com/chahuja/pats/blob/master/data/audio.py#L38)
+    - log_mel_512: Log mel Spectrograms extracted with the function [here](https://github.com/chahuja/pats/blob/master/data/audio.py#L32) 
+    - silence: Using [VAD](https://github.com/chahuja/pats/blob/master/data/audio.py#L65) we estimate which segments have voice of the speaker and which just have noise.
 - text
     - bert: fixed pre-trained bert embeddings of size 768
     - tokens: tokens extracted using BertTokenizer of [HuggingFace](https://huggingface.co)
@@ -63,7 +63,7 @@ python youtube2croppedaudio/youtube2audio.py \
 As raw audio files are downloaded from video streaming websites such as YouTube, some of them may not be available at the time of download. For the purposes of consistent benchmarking **processed** features should be used.
 
 # Data Loader
-As a part of this dataset we provide a DataLoader in [PyTorch](https://pytorch.org) to jumpstart your research. This DataLoader samples batches of aligned processed features of Pose, Audio and Transcripts for one or many speakers in a dictionary format. We describe the various [arguments](#arguments-of-class-data) of the class [`Data`](https://github.com/chahuja/pats/data/dataUtils.py#L51) which generates the DataLoaders.
+As a part of this dataset we provide a DataLoader in [PyTorch](https://pytorch.org) to jumpstart your research. This DataLoader samples batches of aligned processed features of Pose, Audio and Transcripts for one or many speakers in a dictionary format. We describe the various [arguments](#arguments-of-class-data) of the class [`Data`](https://github.com/chahuja/pats/blob/master/data/dataUtils.py#L51) which generates the DataLoaders.
 
 DataLoader Examples: [Ipython Notebook](dataloader_tutorial.ipynb)
 
@@ -86,7 +86,7 @@ pip install -r requirements.txt
 There are way too many arguments (#research) for `Data`. For most cases you might not even need most of them and can leave them as default values. We divide the arguments into **Essential**, **DataLoader Arguments**, **Modality Arguments**, **Sampler Arguments** and **Others**.
 ### Essential
 - `path2data (str)`: path to processed data e.g. "pats/data/processed"
-- `speaker (str or list)`: one or more speaker names. Find list of speakers [here](https://github.com/chahuja/pats/data/common.py#L152).
+- `speaker (str or list)`: one or more speaker names. Find list of speakers [here](https://github.com/chahuja/pats/blob/master/data/common.py#L152).
 - `modalities (list)`: list of processed features to be loaded. Default- ['pose/data', 'audio/log_mel_512']. Find list of all processed features [here](https://github.com/chahuja/pats#processed-features).
 - `fs_new (list)`: list of frame rates for each modality in modalities. Default- [15, 15]. Length of fs_new == Length of modalities. 
 - `time (float)`: length of window for each sample in seconds. Default- 4.3. The default value is recommended. It results in 64 frames of audio and pose when fs_new is 15.
@@ -103,7 +103,7 @@ There are way too many arguments (#research) for `Data`. For most cases you migh
 - `repeat_text (int)`: If 1, the feature of each word token is repeated to match the length of its duration. For example if a word is spoken for 10 frames of the pose and/or audio sequence, it is stacked 10 times. Hence the time dimension of pose audio and transcripts are the same. If 0, words tokens are not repeated. As each sample could have different number of words, the shorter sequences are padded with zeros. Extra features "text/token_duration" and "text/token_count" are also part of the sample which represent the duration of each token in frames and number of tokens in each sequence respectively.
 
 ### Sampler Arguments (Mutually exclusive unless specified)
-- `style_iters (int)`: If value > 0, [`AlternateClassSampler`](https://github.com/chahuja/pats/data/dataUtils.py#L618) is used as the sampler argument while building the train dataloader. This sampler is useful if two or more speakers are trained together. This sampler ensures that each mini-batch has equal number of samples from each speaker. Value refers to the number of iterations in each epoch. Default- 0.
+- `style_iters (int)`: If value > 0, [`AlternateClassSampler`](https://github.com/chahuja/pats/blob/master/data/dataUtils.py#L618) is used as the sampler argument while building the train dataloader. This sampler is useful if two or more speakers are trained together. This sampler ensures that each mini-batch has equal number of samples from each speaker. Value refers to the number of iterations in each epoch. Default- 0.
 - `sample_all_styles (int)`: Can only be used with argument `style_iters` If value > 0, randomly selects value number of samples from each speaker to load. This is especially useful for performing inference in style transfer experiments, when the number of permutations of style transfer increases exponentially with the number of speakers. This argument puts an upper bound on the number of samples for each speaker, hence limiting the time to generate gestures for a limited number of inputs. Default- 0.
 - `num_training_sample (int or None)`: if value > 0, chooses a random subset of unique samples with cardinality of the set == value as the new training set. if value is None, all samples are considered for training. Default- None.
 - `quantile_sample (float or int or None)`: Default- None.

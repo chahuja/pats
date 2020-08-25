@@ -76,10 +76,10 @@ git clone https://github.com/chahuja/pycasper ../pycasper
 ln -s ../pycasper/pycasper .
 ```
 
-* Create an [anaconda](https://www.anaconda.com/) enviroment named `pats` from `env.yaml`
+* Create an [anaconda](https://www.anaconda.com/) or a virtual enviroment and activate it
 
 ```sh
-conda env create -f env.yaml
+pip install -r requirements.txt
 ```
 
 ## Arguments of class `Data`

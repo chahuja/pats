@@ -7,7 +7,7 @@ For a complete overview check the following [link](http://chahuja.com/pats).
 <img src="https://user-images.githubusercontent.com/43928520/90454983-c022ba00-e0c2-11ea-991e-36bd5cb3b38b.png" width="500px">
 </center>
 
-# Relevant Paper(s)
+## Relevant Paper(s)
 - Ahuja, Chaitanya, et al. "Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach." ECCV 2020 - [[website](http://chahuja.com/mix-stage)][[code](http://github.com/chahuja/mix-stage)]
 
 # Structure of the dataset

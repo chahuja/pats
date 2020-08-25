@@ -33,19 +33,20 @@ The dataset consists of:
 - `raw`: mp3 audio files corresponding for each interval which is useful during rendering.
 
 ## Processed Features
-- pose 
-    - data: XY coordinates of upper body pose relative to the neck joint. Joint order and parents can be found [here](https://github.com/chahuja/pats/blob/master/data/skeleton.py#L40)
-    - normalize: same as data but the size of the body is normalized across speakers. In other words, each speaker is scaled to have the same shoulder length. This is especially useful in style transfer experiments where we would like the style of gestures to be independent of the size of the speaker.
-    - confidence: confidence scores provided by openpose with 1 being most confident and 0 being least confident.
-- audio
-    - log_mel_400:  Log mel Spectrograms extracted with the function [here](https://github.com/chahuja/pats/blob/master/data/audio.py#L38)
-    - log_mel_512: Log mel Spectrograms extracted with the function [here](https://github.com/chahuja/pats/blob/master/data/audio.py#L32) 
-    - silence: Using [VAD](https://github.com/chahuja/pats/blob/master/data/audio.py#L65) we estimate which segments have voice of the speaker and which just have noise.
-- text
-    - bert: fixed pre-trained bert embeddings of size 768
-    - tokens: tokens extracted using BertTokenizer of [HuggingFace](https://huggingface.co)
-    - w2v: Word2Vec features of size 300
-    - meta: Pandas Dataframe with words, start_frame and end_frame
+Heirarchy of the features in h5 files explained. To access a festure, both parent and child combine to give a key. For example, `pose/data`, `audio/log_mel_400` and so on.
+- `pose/` 
+    - `data`: XY coordinates of upper body pose relative to the neck joint. Joint order and parents can be found [here](https://github.com/chahuja/pats/blob/master/data/skeleton.py#L40)
+    - `normalize`: same as data but the size of the body is normalized across speakers. In other words, each speaker is scaled to have the same shoulder length. This is especially useful in style transfer experiments where we would like the style of gestures to be independent of the size of the speaker.
+    - `confidence`: confidence scores provided by openpose with 1 being most confident and 0 being least confident.
+- `audio/`
+    - `log_mel_400`:  Log mel Spectrograms extracted with the function [here](https://github.com/chahuja/pats/blob/master/data/audio.py#L38)
+    - `log_mel_512`: Log mel Spectrograms extracted with the function [here](https://github.com/chahuja/pats/blob/master/data/audio.py#L32) 
+    - `silence`: Using [VAD](https://github.com/chahuja/pats/blob/master/data/audio.py#L65) we estimate which segments have voice of the speaker and which just have noise.
+- `text/`
+    - `bert`: fixed pre-trained bert embeddings of size 768
+    - `tokens`: tokens extracted using BertTokenizer of [HuggingFace](https://huggingface.co)
+    - `w2v`: Word2Vec features of size 300
+    - `meta`: Pandas Dataframe with words, start_frame and end_frame
 
 ## Raw Features
 We provide links to original youtube videos to help download the relevant audio files. Rendering the generated animations with audio would require the raw audio and would be useful for user-studies.

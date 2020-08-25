@@ -71,10 +71,12 @@ h1{
 
 
 .authors{
-  max-width: 15rem;
+  max-width: 12rem;
+  min-width: 12rem;
   min-height: 15rem;
   background: #f3f6fa;
-  border: solid 4px #b1aee4;
+  border: solid 1px #b1aee4;
+  border-radius: 0.25rem;
   padding: 1rem;
   text-align: center;
 }

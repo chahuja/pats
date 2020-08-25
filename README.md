@@ -58,7 +58,7 @@ Heirarchy of the features in h5 files explained. To access a festure, both paren
 We provide links to original youtube videos in `cmu_intervals_df.csv` to help download the relevant audio files. Rendering the generated animations with audio would require the raw audio and would be useful for user-studies.
 
 # Dataset Download
-To download **processed** features of the dataset visit [here](http://chahuja.com/pats/download.html).
+To download **processed** features of the dataset visit [here](http://chahuja.com/pats/download.html). Each of the 25 speakers is available as a single zip file except `noah` which had to be split to 2 files. Please run `cat noah.zip.* > noah.zip` to recombine the split files before unzipping them.
 
 To download **raw** features of the dataset run,
 ```sh

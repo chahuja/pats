@@ -8,7 +8,8 @@ For a complete overview check the following [link](http://chahuja.com/pats).
 </center>
 
 ## Relevant Paper(s)
-- Ahuja, Chaitanya, et al. "Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach." ECCV 2020 - [[website](http://chahuja.com/mix-stage)][[code](http://github.com/chahuja/mix-stage)]
+- Ahuja, Chaitanya, et al. "Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach." ECCV 2020 - [[website](http://chahuja.com/mix-stage)][[code](https://github.com/chahuja/mix-stage)]
+- Ahuja, Chaitanya, et al. "No Gestures Left Behind: Learning Relationships between Spoken Language and Freeform Gestures" Findings at EMNLP 2020 - [[code](https://github.com/chahuja/aisle)]
 
 # Structure of the dataset
 

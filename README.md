@@ -7,6 +7,10 @@ For a complete overview check the following [link](http://chahuja.com/pats).
 <img src="https://user-images.githubusercontent.com/43928520/90454983-c022ba00-e0c2-11ea-991e-36bd5cb3b38b.png" width="500px">
 </center>
 
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons Attribution-NonCommercial 2.0 Generic License</a>.
+
+
 ## Relevant Paper(s)
 - Ahuja, Chaitanya, et al. "Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach." ECCV 2020 - [[website](http://chahuja.com/mix-stage)][[code](https://github.com/chahuja/mix-stage)]
 - Ahuja, Chaitanya, et al. "No Gestures Left Behind: Learning Relationships between Spoken Language and Freeform Gestures" Findings at EMNLP 2020 - [[code](https://github.com/chahuja/aisle)]

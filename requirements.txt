@@ -1,7 +1,7 @@
 torch==1.6.0
 transformers==3.0.2
 tqdm==4.32.1
-joblib==0.16.0
+joblib==1.2.0
 youtube-dl==2020.7.28
 nltk==3.4.5
 h5py==2.9.0

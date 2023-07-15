@@ -1,4 +1,4 @@
-torch==1.6.0
+torch==1.13.1
 transformers==3.0.2
 tqdm==4.32.1
 joblib==0.16.0
